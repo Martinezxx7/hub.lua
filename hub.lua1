@@ -1,0 +1,1 @@
+loadstring((game:HttpGet("https://raw.githubusercontent.com/gumanba/Scripts/main/SwingObbyforBrainrots"):gsub("SWING OBBY FOR BRAINROTS","Martinez HUB"):gsub("SWING","Martinez"):gsub("Tora","Martinez"):gsub("YouTube","Discord")))()
