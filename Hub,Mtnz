@@ -1,0 +1,26 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/gumanba/Scripts/main/SwingObbyforBrainrots"))()
+
+local function change(v)
+    if v:IsA("TextLabel") or v:IsA("TextButton") or v:IsA("TextBox") then
+        if v.Text then
+            -- trocar YouTube por Discord
+            v.Text = v.Text:gsub("YouTube","Discord")
+
+            -- manter sua troca do Tora
+            if v.Text:find("Tora") then
+                v.Text = v.Text:gsub("Tora IsMe","Martinezxxx7")
+            end
+
+            -- trocar nome do hub
+            if v.Text:upper():find("SWING") then
+                v.Text = "Martinez HUB"
+            end
+        end
+    end
+end
+
+game.DescendantAdded:Connect(change)
+
+for _,v in ipairs(game:GetDescendants()) do
+    change(v)
+end
